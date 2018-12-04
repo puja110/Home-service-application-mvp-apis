@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#169380</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#169380</color>
+
+    <color name="colorPrimaryText">#050505</color>
+
+    <color name="colorWhite">#FFF</color>
+    <color name="colorBlack">#444</color>
+    <color name="black">#000</color>
+
+    <color name="colorGrey">#C0C0C0</color>
+    <color name="colorBackgroundGrey">#D3D3D3</color>
+    <color name="colorGoogle">#DC4A38</color>
+    <color name="colorFacebook">#3C5998</color>
+    <color name="colorOrange">#F88A01</color>
+
+    <!--splash screen-->
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#1bc1ac</color>
+    <color name="dot_dark_screen2">#1bc1ac</color>
+    <color name="dot_dark_screen3">#1bc1ac</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#8cf9eb</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#8cf9eb</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
+</resources>
+
