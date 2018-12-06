@@ -1,16 +1,13 @@
 package com.doransoft.np.homeservice.modules.main.fragments.serviceDetails;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.doransoft.np.homeservice.MainApplication;
+import com.doransoft.np.homeservice.application.di.MainApplication;
 import com.doransoft.np.homeservice.modules.main.fragments.serviceDetails.di.DaggerServiceDetailsComponent;
 import com.doransoft.np.homeservice.modules.main.fragments.serviceDetails.di.ServiceDetailModule;
 import com.doransoft.np.homeservice.modules.main.fragments.serviceDetails.mvp.ServiceDetailPresenter;
@@ -25,7 +22,6 @@ public class ServiceDetailFragment extends Fragment {
 
     @Inject
     ServiceDetailPresenter serviceDetailPresenter;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

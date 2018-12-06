@@ -6,6 +6,7 @@ import com.doransoft.np.homeservice.application.network.AppNetwork;
 import com.doransoft.np.homeservice.helper.PreferencesManager;
 import com.doransoft.np.homeservice.helper.SchedulerProvider;
 
+import com.doransoft.np.homeservice.modules.main.fragments.service.di.ServiceScope;
 import com.doransoft.np.homeservice.modules.main.fragments.serviceDetails.mvp.ServiceDetailInteractor;
 import com.doransoft.np.homeservice.modules.main.fragments.serviceDetails.mvp.ServiceDetailPresenter;
 import com.doransoft.np.homeservice.modules.main.fragments.serviceDetails.mvp.ServiceDetailView;
@@ -22,8 +23,8 @@ public class ServiceDetailModule {
         this.activity = activity;
     }
 
-    @Provides
     @ServiceDetailScope
+    @Provides
     ServiceDetailView provideServiceDetailView() {
         return new ServiceDetailView(activity);
     }

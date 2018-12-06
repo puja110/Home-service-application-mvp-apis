@@ -21,7 +21,6 @@ public class PreferencesManager {
         this.context = context;
     }
 
-
     public void save(String key, String value)
     {
         sharedPreferences.edit().putString(key,value).apply();
@@ -41,7 +40,6 @@ public class PreferencesManager {
         return sharedPreferences.getBoolean(key,true);
     }
 
-
     public String get(String key)
     {
         return sharedPreferences.getString(key,null);
@@ -51,9 +49,6 @@ public class PreferencesManager {
     {
         return sharedPreferences.getBoolean(key,false);
     }
-
-
-
 
     public boolean isEmpty(String key)
     {
@@ -71,12 +66,6 @@ public class PreferencesManager {
 
         return true;
     }
-
-
-
-
-
-
 
     public String getLoginDetails(){
         SharedPreferences login = context.getSharedPreferences(LOGIN_DETAILS, Context.MODE_PRIVATE);
@@ -96,16 +85,10 @@ public class PreferencesManager {
         return true;
     }
 
-
     public String getServiceDetails(){
         SharedPreferences service = context.getSharedPreferences(SERVICE_DETAILS, Context.MODE_PRIVATE);
         return service.getString(SERVICE_DETAILS, null);
     }
-
-
-
-
-
 
     public void clear()
     {
@@ -130,9 +113,6 @@ public class PreferencesManager {
 
     }
 
-
-
-
     public boolean setelectricity(String setelectrivity) {
 
         SharedPreferences sharedPreferencesPM = context.getSharedPreferences(SHARED_PREF_PASSENGER, Context.MODE_PRIVATE);
@@ -150,9 +130,5 @@ public class PreferencesManager {
         return sharedPreferencesPM.getString(KEY_ELECTRICITY, null);
 
     }
-
-
-
-
 
 }

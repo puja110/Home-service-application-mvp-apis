@@ -1,6 +1,5 @@
 package com.doransoft.np.homeservice.application.di.modules;
 
-
 import android.app.Application;
 import android.content.Context;
 
@@ -21,7 +20,6 @@ public class AppModule {
         this.context = application.getApplicationContext();
     }
 
-
     @Provides
     @AppScope
     public Context context()
@@ -29,24 +27,15 @@ public class AppModule {
         return context;
     }
 
-
     @Provides
     @AppScope
     public SchedulerProvider schedulerProvider() {
         return SchedulerProvider.getInstance();
     }
 
-
-
-
     @Provides
     @AppScope
     RequestPermissionHandler requestPermissionHandler(){
         return  new RequestPermissionHandler();
     }
-
-
-
-
-
 }

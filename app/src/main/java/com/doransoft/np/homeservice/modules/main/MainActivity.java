@@ -22,6 +22,7 @@ import com.doransoft.np.homeservice.modules.main.fragments.more.MoreFragment;
 import com.doransoft.np.homeservice.modules.main.fragments.profile.ProfileFragment;
 import com.doransoft.np.homeservice.modules.main.fragments.search.SearchFragment;
 import com.doransoft.np.homeservice.helper.BottomNavigationHelper;
+import com.doransoft.np.homeservice.modules.main.fragments.service.ServiceFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -119,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.menu_profile:
                 transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.frame_container, new ProfileFragment());
+                transaction.replace(R.id.frame_container, new ServiceFragment());
                 break;
             case R.id.menu_more:
                 transaction = getSupportFragmentManager().beginTransaction();

@@ -9,9 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.doransoft.np.homeservice.MainApplication;
+import com.doransoft.np.homeservice.application.di.MainApplication;
 import com.doransoft.np.homeservice.application.di.ApplicationComponent;
-import com.doransoft.np.homeservice.modules.main.fragments.more.di.DaggerMoreComponent;
 import com.doransoft.np.homeservice.modules.main.fragments.more.di.MoreModule;
 import com.doransoft.np.homeservice.modules.main.fragments.more.mvp.MorePresenter;
 import com.doransoft.np.homeservice.modules.main.fragments.more.mvp.MoreView;
@@ -30,7 +29,6 @@ public class MoreFragment extends Fragment {
 
     @Inject
     MoreView moreView;
-
 
     @Nullable
     @Override

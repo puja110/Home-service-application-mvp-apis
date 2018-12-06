@@ -26,7 +26,6 @@ public class FeaturedProductsAdapter extends RecyclerView.Adapter<FeaturedProduc
     private Activity activity;
 //    List<Message> messageproduct;
 
-
     List<Message> messageproduct = new ArrayList<>();
 
     public FeaturedProductsAdapter(Activity activity) {

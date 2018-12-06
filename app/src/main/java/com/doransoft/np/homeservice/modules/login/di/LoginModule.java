@@ -1,6 +1,5 @@
 package com.doransoft.np.homeservice.modules.login.di;
 
-
 import android.support.v7.app.AppCompatActivity;
 
 import com.doransoft.np.homeservice.application.network.AppNetwork;

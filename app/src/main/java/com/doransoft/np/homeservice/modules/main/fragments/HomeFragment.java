@@ -124,7 +124,6 @@ public class HomeFragment extends Fragment {
         mLinearLayout = (LinearLayout) view.findViewById(R.id.pagesContainer);
         setupSlider();
 
-
         /*-----------------------service grid -------------------------------------*/
         recyclerViewGrid = (RecyclerView) view.findViewById(R.id.recyclerGrid);
 

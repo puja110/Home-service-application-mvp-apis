@@ -1,16 +1,9 @@
 package com.doransoft.np.homeservice.modules.register;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
-import com.doransoft.np.homeservice.MainApplication;
-import com.doransoft.np.homeservice.R;
-import com.doransoft.np.homeservice.modules.login.LoginActivity;
-import com.doransoft.np.homeservice.modules.login.di.DaggerLoginComponent;
-import com.doransoft.np.homeservice.modules.login.di.LoginModule;
+import com.doransoft.np.homeservice.application.di.MainApplication;
 import com.doransoft.np.homeservice.modules.register.di.DaggerRegisterComponent;
 import com.doransoft.np.homeservice.modules.register.di.RegisterModule;
 import com.doransoft.np.homeservice.modules.register.mvp.RegisterPresenter;

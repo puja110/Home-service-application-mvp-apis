@@ -10,6 +10,6 @@ import dagger.Component;
 @Component(modules = MoreModule.class, dependencies = ApplicationComponent.class)
 public interface MoreComponent {
 
-    void inject(MoreFragment shopFragment);
+    void inject(MoreFragment moreFragment);
 
 }

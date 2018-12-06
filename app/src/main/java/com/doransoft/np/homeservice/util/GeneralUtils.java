@@ -36,9 +36,7 @@ import okhttp3.ResponseBody;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
-
 public class GeneralUtils {
-
 
     //error message from network
     public static String getErrorMessage(ResponseBody responseBody) {
@@ -87,9 +85,6 @@ public class GeneralUtils {
             return "0000000000000000";
         }
     }
-
-
-
 
     public static String contactPicked(Intent data, Activity activity) {
 
@@ -147,9 +142,7 @@ public class GeneralUtils {
         }else {
             return false;
         }
-
     }
-
 
     public static TranslateAnimation shakeError() {
         TranslateAnimation shake = new TranslateAnimation(0, 10, 0, 0);

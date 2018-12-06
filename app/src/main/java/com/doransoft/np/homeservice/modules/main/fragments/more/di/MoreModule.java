@@ -1,8 +1,9 @@
 package com.doransoft.np.homeservice.modules.main.fragments.more.di;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 
-import com.doransoft.np.homeservice.adapter.ServiceListAdapter;
+import com.doransoft.np.homeservice.modules.main.fragments.more.adapter.CategoryAdapter;
 import com.doransoft.np.homeservice.application.network.AppNetwork;
 import com.doransoft.np.homeservice.helper.PreferencesManager;
 import com.doransoft.np.homeservice.helper.SchedulerProvider;
@@ -25,8 +26,8 @@ public class MoreModule {
 
     @MoreScope
     @Provides
-    public MoreView moreView(FeaturedProductsAdapter featuredProductsAdapter) {
-        return new MoreView(activity, featuredProductsAdapter);
+    public MoreView moreView(FeaturedProductsAdapter featuredProductsAdapter, CategoryAdapter categoryAdapter) {
+        return new MoreView(activity, featuredProductsAdapter, categoryAdapter);
     }
 
     @MoreScope
@@ -38,14 +39,20 @@ public class MoreModule {
 
     @MoreScope
     @Provides
-    public MorePresenter morePresenter(MoreView moreView, MoreModel moreModel, SchedulerProvider schedulerProvider) {
-        return new MorePresenter(moreView, moreModel,schedulerProvider);
+    public MorePresenter morePresenter(Activity activity,MoreView moreView, MoreModel moreModel, SchedulerProvider schedulerProvider) {
+        return new MorePresenter(activity,moreView, moreModel,schedulerProvider);
     }
 
     @MoreScope
     @Provides
     public FeaturedProductsAdapter featuredProductsAdapter() {
         return new FeaturedProductsAdapter(activity);
+    }
+
+    @MoreScope
+    @Provides
+    public  CategoryAdapter categoryAdapter(){
+        return new CategoryAdapter(activity);
     }
 
 }

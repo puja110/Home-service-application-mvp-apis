@@ -1,11 +1,9 @@
-package com.doransoft.np.homeservice;
+package com.doransoft.np.homeservice.application.di;
 
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 
-import com.doransoft.np.homeservice.application.di.ApplicationComponent;
-import com.doransoft.np.homeservice.application.di.DaggerApplicationComponent;
 import com.doransoft.np.homeservice.application.di.modules.AppModule;
 import com.facebook.stetho.Stetho;
 
@@ -29,8 +27,6 @@ public class MainApplication extends Application {
     public void onTerminate() {
         super.onTerminate();
     }
-
-
 
     public static MainApplication get(Activity activity) {
         return (MainApplication) activity.getApplication();
